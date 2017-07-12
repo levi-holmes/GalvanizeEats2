@@ -19,19 +19,20 @@ $.get(MenupullAPI)
     console.log(data);
 for (var i = 0; i < data.menu.length; i++) {
   $SetSelect.append("<option><p>" + data.menu[i].name + "</p></option>")
-}$(".menuContainer").empty();
-for (var i = 0; i < data.menu.length; i++) {
-       var menui = data.menu[i];
-       var menupulldown = menui.name + menui.price;
-       $(menuContainer).append(name + price)}
+}
 })
 
-
+$(".menuContainer").empty();
+for (var i = 0; i < menu.length; i++) {
+       var menui = menu[i];
+       var menupulldown = menui.name + menui.price;
+       $(menuContainer).append(name + price)
 
 $.get(gEatsMenu.then(function(data) {
     var cards = data.menu[i].price;
     for (var i = 0; i < menu.length; i++) {
       updatePage(menu[i]);
-        }
-      })
-    )
+
+
+
+  }
